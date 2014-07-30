@@ -5,13 +5,17 @@ php:
   #- 5.4
   #- 5.5
   - 5.6
-  
+env:
+ golbal:
+  - secure: LTVX+kA9opmUKjWNK7uaG5i+R9JJCqJvx5JY5AnQKR/kzVcV1pXWUMmxr+quJl8AXKxXdEE4m1lZ0U0Ij5tbocmTERo7SXllD4Nun78gEQN39ABUBbrfmqjAXc6TV8I+mK+EFe2Df1rnKLNuWdMlCf0FgOmaDnfhK2szFY5l2rmmMw6nM6WIiXTWLXLoq0G25RwLI/uFyDdtkRB9OGUKQirkj2kc8m5DeC5BKpdpfoHwIE2PsB58SR31YSgi85OkSDoltZjuFv0vWwuK7VKdWmowY+TiI6GoNUJMfsC7hLYOxn8z1EGDHAm9rIlZ5pEbPrNdGhsfP37KfmR3JvgsEA==
 before_script: 
   - mkdir -p shippable/codecoverage
   - mkdir -p shippable/testresults
 
 script:
    - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
+   - echo $foo
+   - echo $bar
 
 notifications:
    email: false
