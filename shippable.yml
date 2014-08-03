@@ -19,6 +19,7 @@ script:
    - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
    - echo $foo
    - echo $bar
+   - git rev-parse --abbrev-ref HEAD
 
 notifications:
    email: false
