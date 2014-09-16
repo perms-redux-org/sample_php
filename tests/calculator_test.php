@@ -16,8 +16,8 @@ class CalculatorTest extends PHPUnit_Framework_TestCase{
   //were expecting
   public function testSubtract(){
       $calc = new Calculator();
-      $difference = $calc->subtract(3,2);
-      $this->assertEquals(4, $difference); //check if 5 - 2 is equal to 3
+      $difference = $calc->subtract(5,2);
+      $this->assertEquals(3, $difference); //check if 5 - 2 is equal to 3
   }
 
   //test if the multiply() method in our calculator class
