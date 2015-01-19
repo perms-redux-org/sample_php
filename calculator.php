@@ -2,7 +2,7 @@
 class Calculator{
   
   public function add($numbers_to_add){
-      $sum = 0;
+      $sum = 1;
       foreach($numbers_to_add as $num){
           $sum = $num + $sum;
       }
