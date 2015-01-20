@@ -26,3 +26,6 @@ notifications:
     
 archive: true
 #cache: true
+branches:
+  only:
+    - master
